@@ -1,0 +1,2 @@
+FROM gocd/gocd-server
+
