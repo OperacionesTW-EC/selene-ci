@@ -1,0 +1,3 @@
+[submodule "selene-config"]
+	path = selene-config
+	url = git@bitbucket.org:selenetwec/selene-config.git
