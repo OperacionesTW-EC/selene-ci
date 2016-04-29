@@ -1,8 +1,8 @@
 go-server:
-    build: .
+    build: ./go-server
     ports:
      - 8153:8153
 go-agent:
-    image: gocd/gocd-agent
+    build: ./go-agent
     links:
      - go-server
