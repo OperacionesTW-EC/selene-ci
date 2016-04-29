@@ -1,3 +1,5 @@
+db-ci:
+    image: postgres
 go-server:
     build: ./go-server
     ports:
@@ -6,3 +8,4 @@ go-agent:
     build: ./go-agent
     links:
      - go-server
+     - db-ci
