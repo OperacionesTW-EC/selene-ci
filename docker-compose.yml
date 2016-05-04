@@ -1,11 +1,11 @@
-db-ci:
+dbci:
     image: postgres
-go-server:
+goserver:
     build: ./go-server
     ports:
      - 8153:8153
-go-agent:
+goagent:
     build: ./go-agent
     links:
-     - go-server
-     - db-ci
+     - goserver
+     - dbci
